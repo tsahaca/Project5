@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <!-- 
+	<property name="LOG_FILE"
+		value="app.log" />
+		-->
+	<property name="LOG_FILE_MAX_SIZE" value="5MB" />
+	<property name="LOG_TOTAL_SIZE_CAP" value="10MB" />
+	<property name="LOG_FILE_MAX_HISTORY" value="1" />
+    
+    <include resource="file-appender.xml" />
+	<include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+	
+	<root level="INFO">
+	    <appender-ref ref="CONSOLE" />
+	    <appender-ref ref="FILE" />
+	</root>
+	
+</configuration
