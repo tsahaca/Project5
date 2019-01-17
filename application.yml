@@ -1,0 +1,34 @@
+logging:                                                                                                                 
+  config: classpath:logback-spring.xml                                                                                   
+  level:                                                                                                                 
+    org.springframework.security: INFO                                                                                   
+    org.springframework.web: INFO                                                                                        
+    org.springframework.oxm: INFO
+    org.springframework.ws: INFO
+    org.apache.http.client.HttpClient: DEBUG
+    com.test: DEBUG                                                                                   
+  file: application.log                                                                                    
+security:                                                                                                                
+  oauth2:                                                                                                                
+    client:                                                                                                              
+      clientId: username                                                                                             
+      clientSecret: pwd                                                                                              
+    resource:                                                                                                            
+      tokenInfoUri: https://host/as/introspect.oauth2
+#      tokenEndpoint: https://host/as/token.oauth2                                                    
+server:                                                                                                                  
+  port: 8080                                                                                                             
+#  ssl:                                                                                                                   
+#    keyStore: file:/opt/app/config/keystore.p12                                                                          
+#    keyStorePassword: changeit                                                                                           
+#    keyStoreType: PKCS12                                                                                                 
+#    keyAlias: tomcat    
+client:
+#  default-uri: http://localhost:90/test
+  default-uri: http://localhost/test
+  user:
+    name: userid
+    password: pwdtest
+spring:
+  mvc:
+    throw-exception-if-no-handler-found: true      
