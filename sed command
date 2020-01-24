@@ -1,0 +1,7 @@
+To search and remove the following patterns in xml files
+
+id="8a8b498d6fb048e3016fb0d8c8340194" 
+created="1578613811681"
+modified="1579241568536"
+
+sed -i 's/id="[a-zA-Z0-9]*"//g; s/created="[0-9]*"//g ; s/modified="[a-zA-Z0-9]*"//g' *.xml
