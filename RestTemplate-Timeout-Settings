@@ -1,0 +1,19 @@
+import org.springframework.web.client.RestTemplate;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+
+/**
+ * will be used to set the connection timeout for
+ * Spring RestTemplate
+ */
+public  HttpComponentsClientHttpRequestFactory getClientHttpRequestFactory() {
+   HttpComponentsClientHttpRequestFactory clientHttpRequestFactory
+	      = new HttpComponentsClientHttpRequestFactory();
+   //Connect timeout
+   clientHttpRequestFactory.setConnectTimeout(5000);
+
+   //Read timeout
+   clientHttpRequestFactory.setReadTimeout(7000);
+   return clientHttpRequestFactory;
+}
+
+RestTemplate restTemplate = new RestTemplate(getClientHttpRequestFactory());
