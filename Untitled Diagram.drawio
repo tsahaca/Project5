@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-01T17:15:45.674Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="Ik427tLq5dcz-wvPoGOf" version="13.6.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-03-01T19:30:24.322Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="zMO0r9eWz1v7qlidraYR" version="13.6.2" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Individual Local Queue">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -55,7 +55,7 @@
         <mxCell id="e0lowQhUF1aK5Mdf0706-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="e0lowQhUF1aK5Mdf0706-11" target="e0lowQhUF1aK5Mdf0706-16">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="726" y="190" />
+              <mxPoint x="720" y="190" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -91,6 +91,27 @@
         </mxCell>
         <mxCell id="1ADneiXSZLYNtu76etHP-1" value="Individual Queue, MDB=1, Kafka Publisher and NFS Mount&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="160" y="50" width="540" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jYFGkMY4JWQSZ4IfbR-0" value="" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.services.network_file_share_service;fontSize=18;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="492.5" y="290" width="55" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jYFGkMY4JWQSZ4IfbR-1" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="e0lowQhUF1aK5Mdf0706-11" target="p9jYFGkMY4JWQSZ4IfbR-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="432.5" y="200.5" as="sourcePoint" />
+            <mxPoint x="440" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p9jYFGkMY4JWQSZ4IfbR-2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="e0lowQhUF1aK5Mdf0706-13" target="p9jYFGkMY4JWQSZ4IfbR-0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="230" as="sourcePoint" />
+            <mxPoint x="530.3626943005181" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p9jYFGkMY4JWQSZ4IfbR-3" value="on Failure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="530" y="250" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p9jYFGkMY4JWQSZ4IfbR-4" value="on Failure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="530" y="380" width="60" height="17" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -154,7 +175,7 @@
           <mxGeometry x="670" y="324.87" width="71.54" height="116.25" as="geometry" />
         </mxCell>
         <mxCell id="ipWdtsRA-fva5CHLgCSw-0" value="Global Queue, MDB=1/5, Kafka Publisher&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;" vertex="1" parent="5nbHtI2BLRnOqnz30nR1-1">
-          <mxGeometry x="260" y="90" width="390" height="50" as="geometry" />
+          <mxGeometry x="250" y="110" width="370" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
